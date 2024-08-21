@@ -386,6 +386,29 @@ body{
     background: transparent;
 
 }
+.form-request-button{
+    width: 290px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(95deg, #7e22ce 3.2%, #3b82f6 99.5%);
+    transition: all 0.3s ease;
+}
+.form-request-button:hover{
+    width: 300px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .mobile .items-box:before{
     content: "";
     position: absolute;
