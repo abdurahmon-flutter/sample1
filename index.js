@@ -16,19 +16,17 @@ btnreq.addEventListener('click', () => {
 });
 
 function submitForm() {
-    // Get form element
     const form = document.getElementById('requestForm');
-    
-    // Create a FormData object from the form
     const formData = new FormData(form);
-    
-    // Convert FormData to a JSON object
     const data = {};
+    
     formData.forEach((value, key) => {
         data[key] = value;
     });
 
-    // Send the request
+    // Debug: Log the data to ensure all fields are collected
+    console.log('Form Data:', data);
+
     fetch('https://keshvista.pythonanywhere.com/request/', {
         method: 'POST',
         headers: {
@@ -43,12 +41,10 @@ function submitForm() {
         return response.json();
     })
     .then(data => {
-        // Handle successful response
         alert('Request submitted successfully!');
         console.log('Success:', data);
     })
     .catch(error => {
-        // Handle errors
         alert('There was a problem with your request.');
         console.error('Error:', error.message);
     });
