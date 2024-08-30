@@ -308,7 +308,7 @@
     gap: 25px;
     background: transparent;
     padding-inline: 10px;
-    padding-inline-start: 15%;
+    padding-inline-start: 14%;
     border-radius: 20px;
 }
 .mobile .items-box::-webkit-scrollbar {
@@ -759,5 +759,66 @@
         font-size: 20px;
         line-height: 40px;
         color: #fff;
+    }
+    .mobile .items-box .nft-box {
+        padding: 16px;
+        border: 1px solid #000;
+        background: linear-gradient(170deg, rgba(52, 93, 129, 0.08) 1.85%, rgba(57, 46, 75, 0.08) 98%);
+        border-radius: 2rem;
+        height: 350px;
+        width: 250px;
+        animation: toLeft 0.8s ease-out;
+    }
+    
+    .mobile .items-box .nft-box .nft-pic{
+        object-fit: cover;
+        width: 220px;
+        height: 200px;
+        border-radius: 1.6rem;
+    }
+    .mobile .items-box .nft-box .nft-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+    .mobile .items-box .nft-box .info, .mobile .items-box .nft-box .likes{
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-weight: 600;
+        font-size: 12px;
+    }
+    .mobile .items-box .nft-box .info-img{
+        object-fit: cover;
+        flex-shrink: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .button-download{
+        width: 120px;
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        margin-left: 25%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        color: #fff;
+        background: linear-gradient(95deg, #7e22ce 3.2%, #3b82f6 99.5%);
+        transition: all 0.3s ease;
+    }
+    .button-download:hover{
+        width: 125px;
+        height: 35px;
+        border-radius: 20px;
+        border: 1px solid #fff;
+        margin-left: 29%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        color: #fff;
+        background: transparent;
+    
     }
 }
