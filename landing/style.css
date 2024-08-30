@@ -101,10 +101,11 @@
 }
 
 .main .top-container{
+    margin-top: 10rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 10rem;
+   
 }
 
 .top-container .info-box{
@@ -113,7 +114,7 @@
 }
 
 .top-container .header{
-    margin: 0;
+    margin-top: 0;
     color: #fff;
     font-size: 2.4rem;
     font-weight: 600;
@@ -296,8 +297,8 @@
 }
 
 .mobile .items-box {
-    margin-top: 20px;
-    padding: 20px 0;
+    margin-top: 10px;
+    padding: 10px 0;
     position: relative;
     display: flex;
     overflow-x: scroll;
@@ -306,8 +307,8 @@
     scroll-padding: 0 30px;
     gap: 25px;
     background: transparent;
-    padding-inline: 20px;
-    padding-inline-start: 10%;
+    padding-inline: 10px;
+    padding-inline-start: 15%;
     border-radius: 20px;
 }
 .mobile .items-box::-webkit-scrollbar {
@@ -329,12 +330,14 @@
     border: 1px solid #000;
     background: linear-gradient(170deg, rgba(52, 93, 129, 0.08) 1.85%, rgba(57, 46, 75, 0.08) 98%);
     border-radius: 2rem;
+    height: 450px;
+    width: 300px;
     animation: toLeft 0.8s ease-out;
 }
 
 .mobile .items-box .nft-box .nft-pic{
     object-fit: cover;
-    width: 300px;
+    width: 270px;
     height: 300px;
     border-radius: 1.6rem;
 }
@@ -652,5 +655,109 @@
     }
     to{
         transform: translateX(0px);
+    }
+}
+@media only screen and (max-width: 600px) {
+    .mobile .items-box {
+        padding-inline-start: 2%;
+    }
+    .top-container .header{
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+    .top-container .info-text{
+        margin: 20px 0 32px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+    }
+    .top-container .info-btn{
+        cursor: pointer;
+        padding: 8px 38px;
+        border-radius: 16px;
+        font-weight: 500;
+        font-size: 10px;
+        letter-spacing: -1px;
+        color: #fff;
+    }
+    .get-started .header{
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+    .get-started .info-text{
+        margin-top: 5%;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+    }
+    .top-container .nft-box{
+        padding: 16px;
+        height: 340px;
+        width: 300px;
+        border: 1px solid #000;
+        background: linear-gradient(170deg, rgba(52, 93, 129, 0.08) 1.85%, rgba(57, 46, 75, 0.08) 98%);
+        border-radius: 2rem;
+        animation: toLeft 0.8s;
+    }
+    
+    .top-container .nft-pic{
+        object-fit: cover;
+        width: 270px;
+        height: 250px;
+        border-radius: 1.6rem;
+    }
+    
+    .top-container .nft-box .nft-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+    
+    .top-container .nft-box .info, .top-container .nft-box .likes{
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-weight: 600;
+        font-size: 12px;
+    }
+    
+    .top-container .nft-box .info-img{
+        object-fit: cover;
+        flex-shrink: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    .top-container .nft-box .likes .icon-box{
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+    
+    .top-container .nft-box .likes .icon-box .bx{
+        font-size: 30px;
+        margin-right: 8px;
+    }
+    .mobile .header{
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+    .mobile .info-text{
+        margin-top: 5%;
+        font-size: 12px;
+        text-align: center;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+    }
+    .main .footer .footer-header{
+        max-width: 100%;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 40px;
+        color: #fff;
     }
 }
