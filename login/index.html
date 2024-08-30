@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../logo.png" type="image/x-icon">
+    <title>Keshvista | Login</title>
+</head>
+<body>
+    <div class="container">
+        <h2 style="color: white; font-family: 'Courier New', Courier, monospace; text-align: center;">Keshvista</h2>
+        <div class="login-section">
+            <header>Login</header>
+            <div class="social-buttons">
+                <select id="purpose" name="purpose" class="purpose">
+                    <option value="" disabled selected>Maqsaadingiz</option>
+                    <option value="lcenter">O'quv markazi</option>
+                    <option value="teacher">O'qtuvchi</option>
+                    <option value="parent">Ota-Ona</option>
+                    <option value="student">O'quvchi</option>
+                </select>
+            </div>
+
+            <form>
+                <input id="login" placeholder="Login" required>
+                <input type="password" id="password" placeholder="Parol" required>
+                <button id="login-button" type="submit" class="btn">Kirish</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

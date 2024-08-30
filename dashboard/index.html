@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="dbrd">
+        <div class="sidebar">
+            <a href="#" class="logo">
+                <img class='logok' id="logo" src="../black_logo_corrected.png" alt="Logo">
+                <div class="logo-name"><span>Kesh</span>Vista</div>
+            </a>
+            <ul class="side-menu">
+                <li class="active"><a href="#"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+                <li><a href="#"><i class='bx bx-store-alt'></i>Courses</a></li>
+                <li><a href="#"><i class='bx bx-analyse'></i>Analytics</a></li>
+                <li><a href="#"><i class='bx bx-message-square-dots'></i>Tickets</a></li>
+                <li><a href="#"><i class='bx bx-group'></i>Users</a></li>
+                <li><a href="#"><i class='bx bx-cog'></i>Settings</a></li>
+            </ul>
+            <ul class="side-menu">
+                <li>
+                    <a href="#" class="logout">
+                        <i class='bx bx-log-out-circle'></i>Logout
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- End of Sidebar -->
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Navbar -->
+            <nav>
+                <i class='bx bx-menu'></i>
+                <form action="#">
+                    <div class="form-input">
+                        <input type="search" placeholder="Search...">
+                        <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                    </div>
+                </form>
+                <input type="checkbox" id="theme-toggle" hidden>
+                <label for="theme-toggle" class="theme-toggle"></label>
+                <a href="#" class="notif">
+                    <i class='bx bx-bell'></i>
+                    <span class="count">12</span>
+                </a>
+                <a href="#" class="profile">
+                    <img id="profile" alt="Profile Picture">
+                </a>
+            </nav>
+            <!-- End of Navbar -->
+
+            <!-- Dynamic Content Area -->
+            <div id="item"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+   
+</body>
+</html>
