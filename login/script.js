@@ -10,15 +10,17 @@ loginButton.addEventListener('click', () => {
 });
 
 // Update the URL based on selected purpose
+
+
 document.addEventListener('DOMContentLoaded', function() {
     purposeDropdown.addEventListener('change', function() {
         const selectedValue = purposeDropdown.value;
         if (selectedValue === "lcenter") {
-            url_login = "https://releasekeshvista.pythonanywhere.com/clients/";
+            url_login = Secret.URL+"clients/";
         } else if (selectedValue === "teacher") {
-            url_login = "https://releasekeshvista.pythonanywhere.com/teachers/";
+            url_login = Secret.URL+"teachers/";
         } else if (selectedValue === "parent") {
-            url_login = "https://releasekeshvista.pythonanywhere.com/parents/";
+            url_login = Secret.URL+"parents/";
         }
     });
 });

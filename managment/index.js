@@ -1,4 +1,11 @@
+
+
 document.addEventListener('DOMContentLoaded', async () => {
+    const isLogged = localStorage.getItem('isLoggedIn') === 'true';
+    if(isLogged===false){
+        window.location.href = '/';
+        
+    }
     const body = document.body;
     const logo = document.getElementById('logo');
     const profile = document.getElementById('profile');
@@ -117,8 +124,8 @@ sideLinks.forEach(item => {
 async function fetchUserData() {
     isLoading=true;
     try {
-        const response = await fetch('https://releasekeshvista.pythonanywhere.com/clients/');
-        const lcenterdetailsresponse = await fetch('https://releasekeshvista.pythonanywhere.com/lcenterdetail/');
+        const response = await fetch(Secret.URL+'clients/');
+        const lcenterdetailsresponse = await fetch(Secret.URL+'lcenterdetail/');
         if (!response.ok && !lcenterdetailsresponse.ok) {
             throw new Error('Network response was not ok');
         }

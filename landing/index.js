@@ -4,10 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const userType = localStorage.getItem('userType');
     
     const isLogged = localStorage.getItem('isLoggedIn') === 'true';
-    if(isLogged==true){
-        if(userType=="TEACHER"){
-            window.location.href = '/teacher';
-        }
+    if(isLogged===true){
+        window.location.href = '/';
         
     }
 });

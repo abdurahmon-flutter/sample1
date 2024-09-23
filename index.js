@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if(userType=="TEACHER"){
             window.location.href = '/teacher';
         }else if(userType=="LCENTER"){
-            window.location.href = '/dashboard';
+            window.location.href = '/managment';
         }
 
     }else{

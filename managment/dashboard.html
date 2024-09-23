@@ -1,6 +1,12 @@
 <main id="dashboard">
     <div class="loading-content" style="display: block;">
-       Loading
+        <div class="container">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <h1>Loading..</h1>
     </div>
     <div class="dashboard-content" style="display: none;">
         <div class="header">
@@ -12,10 +18,7 @@
                         </a></li>
                 </ul>
             </div>
-            <a href="#" class="report">
-                <i class='bx bx-cloud-download'></i>
-                <span>Download CSV</span>
-            </a>
+           
         </div>
 
         <!-- Insights -->
@@ -29,8 +32,8 @@
             </li>
             <li><i class='bx bx-show-alt'></i>
                 <span class="info">
-                    <h3>3,944</h3>
-                    <p>Site Visit</p>
+                    <h3 id="courses-content"></h3>
+                    <p>Kurslar</p>
                 </span>
             </li>
             <li><i class='bx bx-line-chart'></i>
