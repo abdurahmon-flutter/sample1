@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+    
 </head>
 <body>
     <div class="dbrd">
@@ -16,15 +17,15 @@
             </a>
             <ul class="side-menu">
                 <li class="active"><a href="#"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
-                <li><a href="#"><i class='bx bx-store-alt'></i>Courses</a></li>
-                <li><a href="#"><i class='bx bx-analyse'></i>Analytics</a></li>
-                <li><a href="#"><i class='bx bx-message-square-dots'></i>Tickets</a></li>
+                <li><a href="#"><i class='bx bx-store-alt'></i>Kurslar</a></li>
+                <li><a href="#"><i class='bx bx-analyse'></i>So'rovlar</a></li>
+                <li><a href="#"><i class='bx bx-message-square-dots'></i>Chatlar</a></li>
                 <li><a href="#"><i class='bx bx-group'></i>Users</a></li>
                 <li><a href="#"><i class='bx bx-cog'></i>Settings</a></li>
             </ul>
             <ul class="side-menu">
-                <li>
-                    <a href="#" class="logout">
+                <li id="logoutbutton">
+                    <a href="" class="logout">
                         <i class='bx bx-log-out-circle'></i>Logout
                     </a>
                 </li>
@@ -38,20 +39,23 @@
             <!-- Navbar -->
             <nav>
                 <i class='bx bx-menu'></i>
+                <h2 id="clientName" style="color: white;"></h2>
                 <form action="#">
                     <div class="form-input">
                         <input type="search" placeholder="Search...">
                         <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
                     </div>
                 </form>
+
                 <input type="checkbox" id="theme-toggle" hidden>
                 <label for="theme-toggle" class="theme-toggle"></label>
                 <a href="#" class="notif">
-                    <i class='bx bx-bell'></i>
+                    <i class='bx bx-analyse'></i>
                     <span class="count">12</span>
                 </a>
                 <a href="#" class="profile">
-                    <img id="profile" src="../logo.png" alt="Profile Picture">
+                    <img id="profile" src="images/user.jpg">
+                    
                 </a>
             </nav>
             <!-- End of Navbar -->

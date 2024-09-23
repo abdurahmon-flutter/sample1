@@ -7,11 +7,19 @@ document.addEventListener("DOMContentLoaded", function() {
     if(isLogged==true){
         if(userType=="TEACHER"){
             window.location.href = '/teacher';
-        }else if(userType=="LCENTER"){
-            window.location.href = '/managment';
+        }else if(userType=="MAINMANAGER"){
+            window.location.href = '/ceo';
         }
 
     }else{
         window.location.href = '/landing';
     }
 });
+// document.oncontextmenu = () =>{
+//     return false
+// }
+// document.onkeydown = e =>{
+//     if(e.key = "F12"){
+//         return false
+//     }
+// }

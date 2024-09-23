@@ -1,0 +1,110 @@
+<main id="dashboard">
+    <div class="loading-content" style="display: block;">
+        <div class="container">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <h1>Loading..</h1>
+    </div>
+    <div class="dashboard-content" style="display: none;">
+        <div class="header">
+            <div class="left">
+                <h1>Bosh Rahbar
+
+                </h1>
+                <ul class="breadcrumb">
+                    <li><a href="#">
+                            Dashboard
+                        </a></li>
+                </ul>
+            </div>
+           
+        </div>
+
+        <!-- Insights -->
+        <ul class="insights">
+            <li>
+                <i class='bx bx-group'></i>
+                <span class="info">
+                    <h3 id="studentCount"></h3>
+                    <p>O'quvchilar</p>
+                </span>
+            </li>
+            <li><i class='bx bx-show-alt'></i>
+                <span class="info">
+                    <h3 id="courses-content"></h3>
+                    <p>Kurslar</p>
+                </span>
+            </li>
+            <li><i class='bx bx-line-chart'></i>
+                <span class="info">
+                    <h3 id="request-content"></h3>
+                    <p>So'rovlar</p>
+                </span>
+            </li>
+            
+            <li><i class='bx bx-analyse'></i>
+                <span class="info">
+                    <h3 id="teachers-content"></h3>
+                    <p>O'qtuvchilar</p>
+                </span>
+            </li>
+            <li><i class='bx bx-message-square-dots'></i>
+                <span class="info">
+                    <h3 id="groups-content"></h3>
+                    <p>Guruhlar</p>
+                </span>
+            </li>
+            <li><i class='bx bx-dollar-circle'></i>
+                <span class="info">
+                    <h3 id="income-content"></h3>
+                    <p>Daromad</p>
+                </span>
+            </li>
+            <li><i class='bx bx-dollar-circle'></i>
+                <span class="info">
+                    <h3 id="expenses-content"></h3>
+                    <p>Xarajatlar</p>
+                </span>
+            </li><li><i class='bx bx-dollar-circle'></i>
+                <span class="info">
+                    <h3 id="clear-income-content"></h3>
+                    <p>Umumiy foyda</p>
+                </span>
+            </li>
+        </ul>
+        <!-- End of Insights -->
+
+        <div class="bottom-data">
+            <div class="orders">
+                <div class="header">
+                    <i class='bx bx-receipt'></i>
+                    <h3>So'rovlar</h3>
+                    <i class='bx bx-search'></i>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>O'quvchi ismi</th>
+                            <th>Telefon raqami</th>
+                            <th class="provider_provider">Provayder</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <div class="reminders" id="chat_navigator">
+                <div class="header">
+                    <i class='bx bx-note'></i>
+                    <h3>Chatlar</h3>
+                    <i class='bx bx-search'></i>
+                </div>
+                <ul class="task-list"></ul>
+            </div>
+            <!-- End of Reminders -->
+        </div>
+    </div>
+</main>

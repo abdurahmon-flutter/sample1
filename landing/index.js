@@ -1,28 +1,25 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Check if 'isLogged' is true in local storage
-    let typeURL = ''
-    const userType = localStorage.getItem('userType');
-    
+    // Check if 'isLoggedIn' is false in local storage
     const isLogged = localStorage.getItem('isLoggedIn') === 'true';
-    if(isLogged===true){
+    if (isLogged) {
         window.location.href = '/';
-        
     }
 });
 
 const toggler = document.querySelector(".toggler");
 const navMenu = document.querySelector("#navMenu");
-toggler.addEventListener('click', function () {
+toggler?.addEventListener('click', function () {
     navMenu.classList.toggle("active")
 });
 
 const scroll = document.getElementById("scroll");
 
-scroll.addEventListener('click', () => {
+scroll?.addEventListener('click', () => {
     document.querySelector(".get-started").scrollIntoView({ behavior: 'smooth' });
 });
+
 const btnreq = document.getElementById("re-button");
-btnreq.addEventListener('click', () => {
+btnreq?.addEventListener('click', () => {
     document.querySelector(".footer").scrollIntoView({ behavior: 'smooth' });
 });
 
@@ -75,4 +72,12 @@ function submitForm() {
     });
 }
 
+document.oncontextmenu = () => {
+    return false;
+};
 
+document.onkeydown = e => {
+    if (e.key === "F12") {
+        return false;
+    }
+};
