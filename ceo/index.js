@@ -584,7 +584,7 @@
                 sendMessageButton.style.width = "60px";
                 sendMessageButton.style.borderRadius = "10px";
         
-                fetch('http://releasekeshvista.pythonanywhere.com/chat-message/', {
+                fetch(`${Secret.URL}/chat-message/`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
